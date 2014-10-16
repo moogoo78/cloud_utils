@@ -13,7 +13,7 @@ function setup_python_env()
     sudo pip install virtualenv virtualenvwrapper
 
     # write to .bashrc
-    echo "export WORKON_HOME=$HOME/.virtualenvs\nexport PROJECT_HOME=$HOME/Devel\nsource /usr/bin/virtualenvwrapper.sh" >> .bashrc
+    echo -e "export WORKON_HOME=$HOME/.virtualenvs\nexport PROJECT_HOME=$HOME/Devel\nsource /usr/bin/virtualenvwrapper.sh" >> .bashrc
 
     rm get-pip.py
 }
