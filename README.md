@@ -5,6 +5,6 @@
 vagrant up eins
 
 
-## startup.sh
+## setup-machine.sh
 
 now for centos 6.5
