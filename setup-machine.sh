@@ -22,7 +22,7 @@ function setup_python_env()
 
 ## os package update & install
 sudo yum update -y
-sudo yum install -y BUILD_TOOLS DEV_TOOLS SERV_DB
+sudo yum install -y $BUILD_TOOLS $DEV_TOOLS $SERV_DB
 
 ## setup python environment
 setup_python_env

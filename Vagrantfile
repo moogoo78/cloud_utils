@@ -4,8 +4,15 @@
 # Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
 VAGRANTFILE_API_VERSION = "2"
 
+$script = <<SCRIPT
+echo I am provisioning...
+wget https://raw.githubusercontent.com/moogoo78/cloud_utils/master/setup-machine.sh --no-check-certificate
+chmod a+x setup-machine.sh
+./setup-machine.sh
+SCRIPT
+
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.provision "shell", inline: "echo Hello"
+  config.vm.provision "shell", inline: $script
   
   config.vm.define "eins" do |eins|
     eins.vm.box = "chef/centos-6.5"

@@ -2,7 +2,7 @@
 
 ## Vagrant
 
-vagrant up eins
+vagrant up eins (provision inline-shell will run setup-machine.sh)
 
 
 ## setup-machine.sh
